@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sge</title>
+        <link rel="stylesheet" href="../Tarea 6.1. - Sitio Web con información sobre Insalación y Uso de un SGE/css/estilo.css">
+
+</head>
+<body>
+
+<header>
+<h1>Sistemas de Gestión Empresarial</h1>
+<p>Odoo</p>
+</header>
+
+<button class="boton-menu" onclick="abrirMenu()">Menú</button>
+
+<nav>
+        <ul id="menuprincipal">
+            <li><a href="pagina.html">Inicio</a></li>
+            <li><a href="Sge.html">¿Qué es un SGE?</a></li>
+            <li><a href="Odoo.html">Instalación</a></li>
+            <li><a href="Admin.html">Administración</a></li>
+            <li><a href="Seguridad.html">Seguridad</a></li>
+            <li><a href="Informes.html">Informes</a></li>
+        </ul>
+    </nav>
+
+<div class="contenido">
+
+<h2>¿Qué es un SGE?</h2>
+
+<p>
+    Un Sistema de Gestión Empresarial, también llamado SGE o ERP (Enterprise Resource Planning),
+    es un programa informático que sirve para gestionar todos los procesos de una empresa desde
+    un solo lugar. En vez de tener programas separados para la contabilidad, las ventas o el
+    almacén, con un SGE todo está conectado y centralizado.
+</p>
+
+<p>
+    Estos sistemas son muy usados en las empresas porque permiten tener toda la información
+    en tiempo real, evitar errores al pasar datos de un programa a otro y tomar mejores
+    decisiones gracias a que los datos están siempre actualizados.
+</p>
+
+<h2>Tipos de SGE</h2>
+
+<p>Hay varios tipos de sistemas de gestión empresarial según lo que ofrecen y cómo funcionan:</p>
+
+<table>
+    <tr>
+        <th>Tipo</th>
+        <th>Descripción</th>
+        <th>Ejemplos</th>
+    </tr>
+    <tr>
+        <td>ERP (Enterprise Resource Planning)</td>
+        <td>Gestiona todos los recursos de la empresa de forma integrada.</td>
+        <td>Odoo, SAP, ERPNext</td>
+    </tr>
+    <tr>
+        <td>CRM (Customer Relationship Management)</td>
+        <td>Se centra en la relación con los clientes y las ventas.</td>
+        <td>Salesforce, HubSpot, Zoho</td>
+    </tr>
+    <tr>
+        <td>SCM (Supply Chain Management)</td>
+        <td>Gestiona la cadena de suministro y la logística.</td>
+        <td>SAP SCM, Oracle SCM</td>
+    </tr>
+    <tr>
+        <td>HRM (Human Resource Management)</td>
+        <td>Gestiona los recursos humanos, nóminas y personal.</td>
+        <td>Meta4, SAP HR</td>
+    </tr>
+    <tr>
+        <td>BI (Business Intelligence)</td>
+        <td>Analiza datos para ayudar a tomar decisiones.</td>
+        <td>Power BI, Tableau</td>
+    </tr>
+</table>
+
+<h2>Características principales</h2>
+
+<p>Los sistemas SGE suelen tener una serie de características comunes que los hacen útiles para las empresas:</p>
+
+<div class="paso">
+<h3>Integración de módulos</h3>
+<p>
+Todos los departamentos de la empresa comparten la misma base de datos. Si el
+almacén registra una venta, la contabilidad lo ve al instante. Esto evita
+duplicar información y cometer errores.
+</p>
+</div>
+
+<div class="paso">
+<h3>Centralización de la información</h3>
+<p>
+Toda la información de la empresa está en un solo sistema. Esto facilita
+mucho el acceso a los datos y hace que sea más fácil controlar lo que pasa
+en la empresa.
+</p>
+</div>
+
+<div class="paso">
+<h3>Acceso por roles y permisos</h3>
+<p>
+Cada usuario solo puede ver y hacer lo que le corresponde según su rol.
+Por ejemplo, un vendedor puede ver las ventas pero no la contabilidad.
+Esto mejora la seguridad de la información.
+</p>
+</div>
+
+<div class="paso">
+<h3>Generación de informes</h3>
+<p>
+Permiten crear informes y estadísticas sobre cualquier área de la empresa.
+También suelen permitir exportar esa información a Excel, PDF u otros formatos.
+</p>
+</div>
+
+<div class="paso">
+<h3>Escalabilidad</h3>
+<p>
+Se pueden adaptar a empresas pequeñas o grandes. Puedes empezar con pocos
+módulos e ir añadiendo más según las necesidades de la empresa vayan creciendo.
+</p>
+</div>
+
+<h2>Ventajas de usar un SGE</h2>
+
+<p>Usar un SGE tiene muchas ventajas para las empresas. Algunas de las más importantes son:</p>
+
+<ul>
+    <li>Se reduce el trabajo manual y los errores humanos.</li>
+    <li>Toda la información está en un mismo lugar y siempre actualizada.</li>
+    <li>Es más fácil controlar los costes y los ingresos de la empresa.</li>
+    <li>Mejora la comunicación entre los distintos departamentos.</li>
+    <li>Se pueden tomar decisiones más rápido porque la información está disponible en tiempo real.</li>
+    <li>Muchos SGE tienen versiones gratuitas o de código abierto.</li>
+</ul>
+
+</div>
+
+<footer>
+<p>Trabajo realizado por Alejandro Arquelladas</p>
+</footer>
+
+<script>
+    function abrirMenu() {
+    var menu = document.getElementById("menuprincipal");
+    if (menu.className === "abierto") {
+    menu.className = "";
+    } else {
+    menu.className = "abierto";
+}
+}
+</script>
+
+</body>
+</html>

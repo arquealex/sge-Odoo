@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="../Tarea 6.1. - Sitio Web con información sobre Insalación y Uso de un SGE/css/estilo.css">
+
+</head>
+<body>
+
+<header>
+<h1>Acceso Seguro y Roles</h1>
+<p>Odoo</p>
+</header>
+
+<button class="boton-menu" onclick="abrirMenu()">Menú</button>
+
+  <nav>
+        <ul id="menuprincipal">
+            <li><a href="pagina.html">Inicio</a></li>
+            <li><a href="Sge.html">¿Qué es un SGE?</a></li>
+            <li><a href="Odoo.html">Instalación</a></li>
+            <li><a href="Admin.html">Administración</a></li>
+            <li><a href="Seguridad.html">Seguridad</a></li>
+            <li><a href="Informes.html">Informes</a></li>
+        </ul>
+    </nav>
+
+<div class="contenido">
+
+<h2>Acceso seguro a la información</h2>
+
+<p>
+    Uno de los puntos más importantes en cualquier sistema empresarial es controlar
+    quién puede acceder a qué información. Si todos los usuarios pudieran ver y cambiar
+    cualquier cosa sería un problema grave para la empresa. Por eso Odoo tiene un
+    sistema de usuarios, roles y permisos.
+</p>
+
+<p>
+    El acceso a Odoo siempre se hace con usuario y contraseña desde la pantalla
+    de inicio de sesión. Cada usuario tiene asignado un rol que determina a qué
+    partes del sistema puede acceder.
+</p>
+
+<img class="imagenCentro" src="../Tarea 6.1. - Sitio Web con información sobre Insalación y Uso de un SGE/images/login.jpeg" alt="Pantalla de login de Odoo">
+<p class="textoImagen">Pantalla de inicio de sesión de Odoo con usuario y contraseña</p>
+
+<h2>Gestión de usuarios</h2>
+
+<p>
+    Para gestionar los usuarios en Odoo hay que ir a Ajustes y luego hacer clic
+    en Administrar usuarios. Desde ahí podemos ver todos los usuarios que existen,
+    crear nuevos o modificar los que ya hay.
+</p>
+
+<img class="imagenCentro" src="../Tarea 6.1. - Sitio Web con información sobre Insalación y Uso de un SGE/images/usuarios.jpeg" alt="Lista de usuarios en Odoo">
+<p class="textoImagen">Lista de usuarios en el panel de administración de Odoo</p>
+
+<div class="paso">
+<h3>Crear un usuario nuevo</h3>
+<p>
+    Para crear un usuario nuevo hacemos clic en Nuevo. Tenemos que rellenar
+    el nombre y el correo electrónico que será su nombre de usuario para
+    iniciar sesión. También le asignamos el tipo de acceso que va a tener.
+</p>
+<img class="imagen-centro" src="../Tarea 6.1. - Sitio Web con información sobre Insalación y Uso de un SGE/images/nuevousuario.jpeg" alt="Formulario de usuario nuevo">
+<p class="texto-imagen">Formulario para crear un nuevo usuario en Odoo</p>
+</div>
+
+<h2>Tipos de acceso y roles</h2>
+
+<p>Odoo tiene tres niveles principales de acceso que se asignan a cada usuario:</p>
+
+<table>
+    <tr>
+        <th>Tipo de usuario</th>
+        <th>Descripción</th>
+        <th>Qué puede hacer</th>
+    </tr>
+    <tr>
+        <td>Administrador</td>
+        <td>Tiene acceso total al sistema.</td>
+        <td>Puede hacer cualquier cosa: crear usuarios, instalar módulos, cambiar configuraciones.</td>
+    </tr>
+    <tr>
+        <td>Usuario interno</td>
+        <td>Usuario normal de la empresa.</td>
+        <td>Puede usar los módulos que el administrador le haya dado acceso.</td>
+    </tr>
+    <tr>
+        <td>Portal</td>
+        <td>Acceso limitado para clientes o proveedores externos.</td>
+        <td>Solo puede ver sus pedidos, facturas o tickets que le correspondan.</td>
+    </tr>
+</table>
+
+<h2>Permisos por módulo</h2>
+
+<p>
+    Dentro de cada usuario se pueden configurar los permisos por módulo. Por ejemplo
+    un usuario puede tener acceso al módulo de Ventas pero no al de Contabilidad.
+    Esto se hace desde el formulario del usuario en la sección de permisos.
+</p>
+
+<img class="imagen-centro" src="../Tarea 6.1. - Sitio Web con información sobre Insalación y Uso de un SGE/images/permisos.jpeg" alt="Permisos del usuario en Odoo">
+<p class="texto-imagen">Configuración detallada de permisos por módulo para un usuario</p>
+
+</div>
+
+<footer>
+<p>Trabajo realizado por Alejandro Arquelladas</p>
+</footer>
+
+<script>
+    function abrirMenu() {
+    var menu = document.getElementById("menuprincipal");
+    if (menu.className === "abierto") {
+    menu.className = "";
+    } else {
+    menu.className = "abierto";
+}
+}
+</script>
+
+</body>
+</html>

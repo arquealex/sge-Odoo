@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="../Tarea 6.1. - Sitio Web con información sobre Insalación y Uso de un SGE/css/estilo.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>Instalación de Odoo</h1>
+        <p>Odoo</p>
+    </header>
+
+    <button class="boton-menu" onclick="abrirMenu()">Menú</button>
+
+    <nav>
+        <ul id="menuprincipal">
+            <li><a href="pagina.html">Inicio</a></li>
+            <li><a href="Sge.html">¿Qué es un SGE?</a></li>
+            <li><a href="Odoo.html">Instalación</a></li>
+            <li><a href="Admin.html">Administración</a></li>
+            <li><a href="Seguridad.html">Seguridad</a></li>
+            <li><a href="Informes.html">Informes</a></li>
+        </ul>
+    </nav>
+
+   
+<div class="contenido">
+
+<h2>¿Qué es Odoo?</h2>
+
+<p>
+    
+    Odoo es un sistema de gestión empresarial de código abierto que incluye una gran
+    cantidad de módulos para gestionar ventas, compras, inventario, contabilidad,
+    recursos humanos y mucho más. Es uno de los ERP más populares del mundo y tiene
+    una versión gratuita llamada Odoo Community.
+</p>
+
+<p>
+Nosotros vamos a instalar Odoo Community 17 en nuestro ordenador usando Windows.
+Para eso descargamos el instalador oficial desde la página web de Odoo.
+</p>
+
+<h2>Proceso de instalación</h2>
+
+<div class="paso">
+
+    <h3>Paso 1 - Descargar el instalador</h3>
+    <p>
+Lo primero es ir a la página oficial de Odoo en <strong>www.odoo.com/es_ES/download</strong>
+y descargar la versión 17 Community para Windows. Es la versión gratuita y la más estable.
+    </p>
+<img class="imagenCentro" src="../Tarea 6.1. - Sitio Web con información sobre Insalación y Uso de un SGE/images/descarga.jpeg" alt="Descarga de Odoo desde la web oficial">
+<p class="textoImagen">Página de descarga de Odoo donde elegimos la versión 17 Community para Windows</p>
+</div>
+
+<div class="paso">
+<h3>Paso 2 - Ejecutar el instalador</h3>
+<p>
+    Una vez descargado el archivo .exe lo ejecutamos haciendo doble clic.
+    Aparece el asistente de instalación de Odoo. Aceptamos el acuerdo de licencia
+    y continuamos con los pasos del instalador.
+</p>
+<img class="imagenCentro" src="../Tarea 6.1. - Sitio Web con información sobre Insalación y Uso de un SGE/images/instalador.png" alt="Asistente de instalación de Odoo">
+<p class="textoImagen">Asistente de instalación de Odoo en Windows</p>
+</div>
+
+<div class="paso">
+<h3>Paso 3 - Instalación en progreso</h3>
+<p>
+    El instalador se encarga de instalar todos los componentes necesarios,
+    incluyendo PostgreSQL que es la base de datos que usa Odoo. El proceso
+    tarda unos minutos.
+</p>
+
+
+
+<div class="paso">
+<h3>Paso 4 - Instalación completada</h3>
+<p>
+Cuando termina aparece la pantalla final del instalador con el botón Finish.
+Hacemos clic en Finish y Odoo se abre automáticamente en el navegador.
+</p>
+
+</div>
+
+<div class="paso">
+    <h3>Paso 5 - Crear la base de datos</h3>
+<p>
+    Al abrir el navegador en <strong>localhost:8069</strong> aparece la pantalla
+    para crear la primera base de datos. Rellenamos el nombre de la base de datos,
+    el email y la contraseña del administrador, seleccionamos el idioma español
+    y hacemos clic en Create database.
+</p>
+<img class="imagenCentro" src="../Tarea 6.1. - Sitio Web con información sobre Insalación y Uso de un SGE/images/crearbdd.jpeg" alt="Crear base de datos en Odoo">
+<p class="textoImagen">Pantalla de creación de la base de datos inicial de Odoo</p>
+</div>
+
+<div class="paso">
+    <h3>Paso 6 - Panel principal</h3>
+<p>
+    Después de crear la base de datos Odoo nos lleva al panel principal donde
+    podemos ver todos los módulos disponibles para instalar. La instalación
+    ha sido bastante sencilla gracias al instalador oficial para Windows.
+</p>
+<img class="imagenCentro" src="../Tarea 6.1. - Sitio Web con información sobre Insalación y Uso de un SGE/images/panelprincipal.jpeg" alt="Panel principal de Odoo">
+<p class="textoImagen">Panel principal de Odoo con todos los módulos disponibles</p>
+</div>
+
+</div>
+
+<footer>
+<p>Trabajo realizado por Alejandro Arquelladas</p>
+</footer>
+
+<script>
+    function abrirMenu() {
+    var menu = document.getElementById("menuprincipal");
+    if (menu.className === "abierto") {
+    menu.className = "";
+    } else {
+    menu.className = "abierto";
+    }
+    }
+</script>
+
+</body>
+</html>

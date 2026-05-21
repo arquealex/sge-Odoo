@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Tarea 6.1. - Sitio Web con información sobre Insalación y Uso de un SGE/css/estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>Sistemas de gestión empresarial</h1>
+        <p> Odoo </p>
+    </header>
+
+    <button class="boton-menu" onclick="abrirMenu()">Menú</button>
+
+    <nav>
+        <ul id="menuprincipal">
+            <li><a href="pagina.html">Inicio</a></li>
+            <li><a href="Sge.html">¿Qué es un SGE?</a></li>
+            <li><a href="Odoo.html">Instalación</a></li>
+            <li><a href="Admin.html">Administración</a></li>
+            <li><a href="Seguridad.html">Seguridad</a></li>
+            <li><a href="Informes.html">Informes</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenido">
+
+<h2>Bienvenido</h2>
+
+<p>
+            En este sitio web vamos a explicar qué son los Sistemas de Gestión Empresarial (SGE),
+            para qué sirven y cómo se usan. También vamos a mostrar cómo instalar y configurar
+</p>
+
+<p>
+   Los SGE son programas que ayudan a las empresas a organizar y gestionar toda su
+   información desde un solo lugar. Con ellos se puede controlar el inventario, las ventas,
+la contabilidad, los empleados y mucho más.
+</p>
+
+<img class="imagen-centro" src="../Tarea 6.1. - Sitio Web con información sobre Insalación y Uso de un SGE/images/panelprincipal.jpeg" alt="Panel principal de Odoo">
+<p class="textoImagen">Panel principal de Odoo con todos los módulos disponibles</p>
+
+<h2>Secciones del sitio</h2>
+
+        <div class="tarjetas">
+
+            <div class="tarjeta">
+                <h3>¿Qué es un SGE?</h3>
+                <p>Información general sobre los sistemas de gestión empresarial, sus tipos y características.</p>
+                <a href="Sge.html">Ver más</a>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Instalación de Odoo</h3>
+                <p>Pasos para instalar Odoo en el ordenador, con capturas de pantalla del proceso.</p>
+                <a href="Odoo.html">Ver más</a>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Administración</h3>
+                <p>Cómo configurar y administrar Odoo una vez instalado. Módulos y opciones principales.</p>
+                <a href="Admin.html">Ver más</a>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Seguridad</h3>
+                <p>Mecanismos de acceso seguro. Cómo gestionar usuarios, roles y permisos en Odoo.</p>
+                <a href="Seguridad.html">Ver más</a>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Informes y exportación</h3>
+                <p>Cómo generar informes en Odoo y exportar la información a otros formatos.</p>
+                <a href="Informes.html">Ver más</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Trabajo realizado por Alejandro Arquelladas</p>
+    </footer>
+
+    <script>
+        function abrirMenu() {
+            var menu = document.getElementById("menuprincipal");
+            if (menu.className === "abierto") {
+                menu.className = "";
+            } else {
+                menu.className = "abierto";
+            }
+        }
+    </script>
+
+</body>
+</html>

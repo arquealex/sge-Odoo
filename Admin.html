@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Tarea 6.1. - Sitio Web con información sobre Insalación y Uso de un SGE/css/estilo.css">
+
+</head>
+<body>
+
+<header>
+<h1>Administración y Configuración</h1>
+<p>Odoo</p>
+</header>
+
+<button class="boton-menu" onclick="abrirMenu()"> Menú</button>
+
+ <nav>
+<ul id="menuprincipal">
+<li><a href="pagina.html">Inicio</a></li>
+<li><a href="Sge.html">¿Qué es un SGE?</a></li>
+<li><a href="Odoo.html">Instalación</a></li>
+<li><a href="Admin.html">Administración</a></li>
+<li><a href="Seguridad.html">Seguridad</a></li>
+<li><a href="Informes.html">Informes</a></li>
+</ul>
+</nav>
+
+<div class="contenido">
+
+    <h2>Administración de Odoo</h2>
+
+    <p>
+  Una vez que Odoo está instalado y hemos creado la base de datos, el siguiente
+ paso es configurarlo. Odoo tiene muchas opciones de configuración que se pueden
+  ajustar desde el panel de ajustes.
+    </p>
+
+<h2>Panel de Ajustes</h2>
+
+<p>
+    Para acceder a los ajustes hay que ir al menú de la izquierda y hacer clic en
+    Ajustes. Desde ahí se pueden gestionar los usuarios, los idiomas, las empresas
+    y muchas otras opciones del sistema.
+</p>
+
+<img class="imagenCentro" src="../Tarea 6.1. - Sitio Web con información sobre Insalación y Uso de un SGE/images/ajustes.jpeg" alt="Panel de ajustes de Odoo">
+<p class="textImagen">Panel de ajustes generales de Odoo</p>
+
+<div class="paso">
+<h3>Configuración de la empresa</h3>
+<p>Lo primero que hay que hacer es configurar los datos de nuestra empresa.
+En Ajustes, dentro de la sección Compañías, hacemos clic en Actualizar
+información para rellenar el nombre, la dirección, el teléfono y otros datos.</p>
+<img class="imagenCentro" src="../Tarea 6.1. - Sitio Web con información sobre Insalación y Uso de un SGE/images/empresa.jpeg" alt="Datos de la empresa en Odoo">
+
+<p class="textImagen">Formulario de configuración de los datos de la empresa</p>
+</div>
+<h2>Instalación de módulos</h2>
+<p>
+Odoo funciona por módulos. Cada módulo añade una funcionalidad nueva al sistema.
+Para instalarlos hay que ir a Aplicaciones desde el menú principal y hacer clic
+en Activar en el módulo que queramos instalar.
+</p>
+
+<img class="imagenCentro" src="../Tarea 6.1. - Sitio Web con información sobre Insalación y Uso de un SGE/images/modulos.jpeg" alt="Módulos instalados en Odoo">
+<p class="textoImagen">Panel de aplicaciones con los módulos instalados en Odoo</p>
+
+<h2>Módulo de Ventas</h2>
+<p>
+El módulo de Ventas permite gestionar presupuestos, pedidos de clientes y
+ hacer seguimiento de las ventas. Una vez instalado podemos crear presupuestos
+y convertirlos en pedidos confirmados.
+</p>
+<img class="imagenCentro" src="../Tarea 6.1. - Sitio Web con información sobre Insalación y Uso de un SGE/images/" alt="Módulo de ventas de Odoo">
+
+<p class="textoImagen">Vista principal del módulo de Ventas en Odoo</p>
+
+<div class="paso">
+<h3>Crear un presupuesto</h3>
+<p>
+Para probar el módulo hemos creado un presupuesto de prueba con un cliente
+y un producto. En Ventas hacemos clic en Nuevo, añadimos el cliente y
+los productos y guardamos el presupuesto.
+</p>
+<img class="imagenCentro" src="../Tarea 6.1. - Sitio Web con información sobre Insalación y Uso de un SGE/images/presupuesto.jpeg" alt="Presupuesto creado en Odoo">
+<p class="textoImagen">Presupuesto de prueba creado en el módulo de Ventas</p>
+</div>
+
+<div class="paso">
+<h3>Confirmar el pedido</h3>
+<p>
+ Una vez creado el presupuesto podemos confirmarlo haciendo clic en el botón
+Confirmar. Esto convierte el presupuesto en un pedido de venta confirmado y queda registrado en el sistema.
+</p>
+<img class="imagenCentro" src="../Tarea 6.1. - Sitio Web con información sobre Insalación y Uso de un SGE/images/pedido.jpeg" alt="Pedido confirmado en Odoo">
+   <p class="textoImagen">Pedido de venta confirmado en Odoo</p>
+</div>
+
+<h2>Gestión de productos</h2>
+
+<p>
+ Desde el módulo de Inventario o Ventas podemos gestionar los productos del sistema. Para cada producto podemos añadir el nombre, el precio, la referencia y la categoría.
+</p>
+
+<img class="imagenCentro" src="../Tarea 6.1. - Sitio Web con información sobre Insalación y Uso de un SGE/images/producto.jpeg" alt="Producto en Odoo">
+<p class="textoImagen">Formulario de producto en Odoo</p>
+
+</div>
+
+<footer>
+ <p>Trabajo realizado por Alejandro Arquelladas</p>
+</footer>
+
+    <script>
+        function abrirMenu() {
+            var menu = document.getElementById("menuprincipal");
+            if (menu.className === "abierto") {
+                menu.className = "";
+            } else {
+                menu.className = "abierto";
+            }
+        }
+    </script>
+
+</body>
+</html>
