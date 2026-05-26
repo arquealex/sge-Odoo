@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+            <link rel="stylesheet" href="../Tarea 6.1. - Sitio Web con información sobre Insalación y Uso de un SGE/css/estilo.css">
+
+
+</head>
+<body>
+
+    <header>
+        <h1>Informes y exportación</h1>
+        <p> Odoo</p>
+    </header>
+
+    <button class="botonMenu" onclick="abrirMenu()"> Menú</button>
+
+    <nav>
+        <ul id="menuprincipal">
+            <li><a href="pagina.html">Inicio</a></li>
+            <li><a href="Sge.html">¿Qué es un SGE?</a></li>
+            <li><a href="Odoo.html">Instalación</a></li>
+            <li><a href="Admin.html">Administración</a></li>
+            <li><a href="Seguridad.html">Seguridad</a></li>
+            <li><a href="Informes.html">Informes</a></li>
+        </ul>
+    </nav>
+
+   
+<div class="contenido">
+
+<h2>Informes en Odoo</h2>
+
+<p>
+    Una de las funciones más útiles de Odoo es la posibilidad de generar informes
+    sobre cualquier área de la empresa. Los informes nos permiten ver de forma
+    resumida y organizada la información que tenemos en el sistema, como las ventas
+    del mes, el stock disponible o las facturas pendientes.
+    </p>
+
+<p>
+    Odoo tiene informes predefinidos en cada módulo que se pueden filtrar y
+    agrupar según lo que necesitemos ver.
+</p>
+
+<h2>Tipos de informes disponibles</h2>
+
+<table>
+    <tr>
+        <th>Módulo</th>
+        <th>Tipo de informe</th>
+        <th>Para qué sirve</th>
+    </tr>
+    <tr>
+        <td>Ventas</td>
+        <td>Análisis de ventas</td>
+        <td>Ver el total de ventas por periodo, por vendedor o por producto.</td>
+    </tr>
+    <tr>
+        <td>Inventario</td>
+        <td>Informe de stock</td>
+        <td>Ver el stock actual de cada producto y su valoración.</td>
+    </tr>
+    <tr>
+        <td>Contabilidad</td>
+        <td>Balance de situación</td>
+        <td>Ver los activos, pasivos y el patrimonio neto de la empresa.</td>
+    </tr>
+    <tr>
+        <td>Contabilidad</td>
+        <td>Cuenta de resultados</td>
+        <td>Ver los ingresos y gastos del periodo seleccionado.</td>
+    </tr>
+</table>
+
+<h2>Cómo generar un informe de ventas</h2>
+
+<div class="paso">
+<h3>Paso 1 - Ir a Informes en Ventas</h3>
+<p>
+Dentro del módulo de Ventas, en el menú superior hay una opción llamada
+Informes. Hacemos clic ahí y luego en Análisis de ventas. Aparece un
+gráfico con las ventas del periodo seleccionado.
+</p>
+</div>
+
+<div class="paso">
+<h3>Paso 2 - Filtrar los datos</h3>
+<p>
+    Podemos filtrar los datos por fecha, por cliente o por producto usando
+    la barra de búsqueda y el botón de filtros. Por ejemplo podemos ver
+    solo las ventas de los últimos 365 días como se ve en la captura.
+</p>
+</div>
+
+<h2>Exportación de información</h2>
+
+<p>
+    Odoo permite exportar cualquier listado a Excel o CSV para poder trabajar
+    con los datos fuera del sistema. Para exportar hay que seleccionar los
+    registros y usar la opción de exportar.
+</p>
+
+<div class="paso">
+<h3>Exportar a Excel</h3>
+<p>
+    Para exportar datos hay que ir al listado de productos o pedidos,
+    seleccionar los registros con el checkbox y luego buscar la opción
+    de Exportar. Odoo abre una ventana donde podemos elegir qué campos
+    queremos incluir en la exportación y el formato del archivo.
+</p>
+<img class="imagenCentro" src="../Tarea 6.1. - Sitio Web con información sobre Insalación y Uso de un SGE/images/exportar.jpeg" alt="Ventana de exportación de datos">
+<p class="textoImagen">Ventana de exportación de datos en Odoo con las opciones disponibles</p>
+</div>
+
+<h2>Conclusión</h2>
+
+<p>
+    Los informes y la exportación de datos son herramientas muy importantes en Odoo.
+    Con los informes podemos ver en todo momento cómo va la empresa y con la
+    exportación podemos llevar esa información a Excel para trabajar con ella
+    o compartirla con otras personas.
+    </p>
+
+</div>
+
+<footer>
+<p>Trabajo realizado por Alejandro Arquelladas</p>
+</footer>
+
+<script>
+    function abrirMenu() {
+    var menu = document.getElementById("menuprincipal");
+    if (menu.className === "abierto") {
+    menu.className = "";
+    } else {
+    menu.className = "abierto";
+    }
+    }
+</script>
+
+</body>
+</html>
